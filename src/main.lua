@@ -23,7 +23,7 @@ end
 function love.draw ()
     if boolean == true then
         love.graphics.setColor(255, 255, 255)
-        love.graphics.circle("fill", 100, 100, 100);
+        love.graphics.circle("fill", 100, 100, 0);
     end
 
     if zustand == 1 then

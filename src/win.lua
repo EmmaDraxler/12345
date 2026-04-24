@@ -12,5 +12,5 @@ function win.draw ()
     love.graphics.setBackgroundColor (21/255, 119/255, 28/255)
     love.graphics.setColor (0, 1, 17/255)
     love.graphics.setFont(myFont)
-    love.graphics.print("Win", 400, 300)
+    love.graphics.print("Win", 250, 20)
 end

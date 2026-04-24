@@ -21,7 +21,7 @@ function game.update (dt)
     hammerX = love.mouse.getX()
     hammerY = love.mouse.getY()
 
-    if lochzeit > 2 then
+    if lochzeit > 1.5 then
         loecher = love.math.random ( 1,11)
         lochzeit= 0
     end
@@ -30,11 +30,11 @@ function game.update (dt)
         random = 3
     end
 
-    if zeit < 60 and punkte == 10 then
+    if zeit < 40 and punkte == 15 then
     zustand = 3
     end
 
-    if zeit > 60 and punkte < 10 then
+    if zeit > 60 and punkte < 15 then
     zustand = 4
     end
     
