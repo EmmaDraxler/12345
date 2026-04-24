@@ -33,57 +33,57 @@ function game.update (dt)
     end
     
     if love.mouse.isDown(1) == true then
-       if loecher == 1 and HammerX > 365 and HammerX < 440 and HammerY > 410 and HammerY < 520 then
+       if loecher == 1 and hammerX > 365 and hammerX < 440 and hammerY > 410 and hammerY < 520 then
           loecher = love.math.random ( 2,11)
           punkte = punkte + 1
        end
 
-        if loecher == 2 and HammerX > 6 and HammerX < 81 and HammerY > 315 and HammerY < 425  then
+        if loecher == 2 and hammerX > 6 and hammerX < 81 and hammerY > 315 and hammerY < 425  then
           loecher = love.math.random ( 1,11)
           punkte = punkte + 1
        end
 
-        if loecher == 3 and HammerX > 245 and HammerX < 320 and HammerY > 309 and HammerY < 419  then
+        if loecher == 3 and hammerX > 245 and hammerX < 320 and hammerY > 309 and hammerY < 419  then
           loecher = love.math.random ( 1,11)
           punkte = punkte + 1
        end
 
-        if loecher == 4 and HammerX > 271 and HammerX < 346 and HammerY > 215 and HammerY < 325  then
+        if loecher == 4 and hammerX > 271 and hammerX < 346 and hammerY > 215 and hammerY < 325  then
           loecher = love.math.random ( 1,11)
           punkte = punkte + 1
        end
 
-        if loecher == 5 and HammerX > 246 and HammerX < 321 and HammerY > 134 and HammerY < 244  then
+        if loecher == 5 and hammerX > 246 and hammerX < 321 and hammerY > 134 and hammerY < 244  then
           loecher = love.math.random ( 1,11)
           punkte = punkte + 1
        end
 
-        if loecher == 6 and HammerX > 83 and HammerX < 158 and HammerY > 154 and HammerY < 264  then
+        if loecher == 6 and hammerX > 83 and hammerX < 158 and hammerY > 154 and hammerY < 264  then
           loecher = love.math.random ( 1,11)
           punkte = punkte + 1
        end
 
-        if loecher == 7 and HammerX > 553 and HammerX < 628 and HammerY > 265 and HammerY < 375  then
+        if loecher == 7 and hammerX > 553 and hammerX < 628 and hammerY > 265 and hammerY < 375  then
           loecher = love.math.random ( 1,11)
           punkte = punkte + 1
        end
 
-        if loecher == 8 and HammerX > 707 and HammerX < 782 and HammerY > 266 and HammerY < 376  then
+        if loecher == 8 and hammerX > 707 and hammerX < 782 and hammerY > 266 and hammerY < 376  then
           loecher = love.math.random ( 1,11)
           punkte = punkte + 1
        end
 
-        if loecher == 9 and HammerX > 695 and HammerX < 770 and HammerY > 156 and HammerY < 266  then
+        if loecher == 9 and hammerX > 695 and hammerX < 770 and hammerY > 156 and hammerY < 266  then
           loecher = love.math.random ( 1,11)
           punkte = punkte + 1
        end
 
-        if loecher == 10 and HammerX > 469 and HammerX < 544 and HammerY > 87 and HammerY < 197 then
+        if loecher == 10 and hammerX > 469 and hammerX < 544 and hammerY > 87 and hammerY < 197 then
           loecher = love.math.random ( 1,11)
           punkte = punkte + 1
        end
 
-        if loecher == 11 and HammerX > 503 and HammerX < 578 and HammerY > 183 and HammerY < 293 then
+        if loecher == 11 and hammerX > 503 and hammerX < 578 and hammerY > 183 and hammerY < 293 then
           loecher = love.math.random ( 1,10)
           punkte = punkte + 1
        end
