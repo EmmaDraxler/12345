@@ -3,6 +3,7 @@ game = {}
 function game.load ()
     punkte = 0
     zeit = 0
+    lochzeit = 0
     loecher = 0
     hammerX = 0
     hammerY = 0
@@ -16,9 +17,14 @@ end
 
 function game.update (dt)
     zeit = zeit + dt
+    lochzeit = lochzeit + dt
     hammerX = love.mouse.getX()
     hammerY = love.mouse.getY()
 
+    if lochzeit > 2 then
+        loecher = love.math.random ( 1,11)
+        lochzeit= 0
+    end
     if random == 2 then
 
         random = 3
@@ -36,56 +42,67 @@ function game.update (dt)
        if loecher == 1 and hammerX > 365 and hammerX < 440 and hammerY > 410 and hammerY < 520 then
           loecher = love.math.random ( 2,11)
           punkte = punkte + 1
+            lochzeit= 0
        end
 
         if loecher == 2 and hammerX > 6 and hammerX < 81 and hammerY > 315 and hammerY < 425  then
           loecher = love.math.random ( 1,11)
           punkte = punkte + 1
+            lochzeit= 0
        end
 
         if loecher == 3 and hammerX > 245 and hammerX < 320 and hammerY > 309 and hammerY < 419  then
           loecher = love.math.random ( 1,11)
           punkte = punkte + 1
+            lochzeit= 0
        end
 
         if loecher == 4 and hammerX > 271 and hammerX < 346 and hammerY > 215 and hammerY < 325  then
           loecher = love.math.random ( 1,11)
           punkte = punkte + 1
+            lochzeit= 0
        end
 
         if loecher == 5 and hammerX > 246 and hammerX < 321 and hammerY > 134 and hammerY < 244  then
           loecher = love.math.random ( 1,11)
           punkte = punkte + 1
+            lochzeit= 0
        end
 
         if loecher == 6 and hammerX > 83 and hammerX < 158 and hammerY > 154 and hammerY < 264  then
           loecher = love.math.random ( 1,11)
           punkte = punkte + 1
+            lochzeit= 0
        end
 
         if loecher == 7 and hammerX > 553 and hammerX < 628 and hammerY > 265 and hammerY < 375  then
           loecher = love.math.random ( 1,11)
           punkte = punkte + 1
+            lochzeit= 0
        end
 
         if loecher == 8 and hammerX > 707 and hammerX < 782 and hammerY > 266 and hammerY < 376  then
           loecher = love.math.random ( 1,11)
           punkte = punkte + 1
+            lochzeit= 0
        end
 
         if loecher == 9 and hammerX > 695 and hammerX < 770 and hammerY > 156 and hammerY < 266  then
           loecher = love.math.random ( 1,11)
           punkte = punkte + 1
+            lochzeit= 0
        end
 
         if loecher == 10 and hammerX > 469 and hammerX < 544 and hammerY > 87 and hammerY < 197 then
           loecher = love.math.random ( 1,11)
           punkte = punkte + 1
+            lochzeit= 0
        end
 
         if loecher == 11 and hammerX > 503 and hammerX < 578 and hammerY > 183 and hammerY < 293 then
           loecher = love.math.random ( 1,10)
           punkte = punkte + 1
+            lochzeit= 0
        end
     end
 end
